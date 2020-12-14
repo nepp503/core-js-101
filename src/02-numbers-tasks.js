@@ -239,8 +239,7 @@ function isPrime(n) {
  */
 function toNumber(value, def) {
   const parsed = parseInt(value, 10);
-  // eslint-disable-next-line no-restricted-globals
-  if (isNaN(parsed)) { return def; }
+  if (Number.isNaN(parsed)) { return def; }
   return parsed;
 }
 
